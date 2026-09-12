@@ -1,0 +1,876 @@
+/* =========================
+   ASOSIY SOZLAMALAR
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* Fixed header uchun joy */
+    padding-top: 78px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    height: 78px;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.nav {
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: linear-gradient( 135deg, #1261d6, #19a1ff);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.logo h2 {
+    font-size: 18px;
+    color: #1261d6;
+}
+
+.logo span {
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #172033;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1261d6;
+}
+
+
+/* MENU TUGMASI */
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient( 90deg, rgba(4, 31, 78, 0.94), rgba(8, 77, 160, 0.75)), linear-gradient( 135deg, #1261d6, #12a8e8);
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.hero-small {
+    font-size: 14px;
+    letter-spacing: 4px;
+    opacity: 0.85;
+}
+
+.hero h1 {
+    max-width: 900px;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.05;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #71d7ff;
+}
+
+.hero p {
+    max-width: 750px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #1261d6;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0b4eae;
+    transform: translateY(-2px);
+}
+
+.hero .btn {
+    background: white;
+    color: #1261d6;
+}
+
+.hero .btn:hover {
+    background: #71d7ff;
+    color: #082c5c;
+}
+
+.hero .btn-outline {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+
+/* =========================
+   STATISTIKA
+========================= */
+
+.statistics {
+    background: #1261d6;
+    color: white;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.stat {
+    padding: 30px 10px;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat strong {
+    display: block;
+    font-size: 30px;
+}
+
+.stat span {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+
+/* =========================
+   UMUMIY SECTION
+========================= */
+
+.section {
+    padding: 90px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title span {
+    color: #1261d6;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    margin: 8px 0;
+    font-size: 38px;
+}
+
+.section-title p {
+    color: #777;
+}
+
+
+/* =========================
+   MAKTAB HAQIDA
+========================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.school-placeholder {
+    width: 100%;
+    min-height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient( 135deg, #dff4ff, #b8e3ff);
+}
+
+.school-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.about-text p {
+    margin-bottom: 18px;
+    color: #666;
+}
+
+
+/* =========================
+   XUSUSIYATLAR
+========================= */
+
+.features {
+    padding: 90px 0;
+    background: #092b58;
+    color: white;
+}
+
+.section-title.light span {
+    color: #71d7ff;
+}
+
+.section-title.light h2,
+.section-title.light p {
+    color: white;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    padding: 35px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+    background: rgba(255, 255, 255, 0.13);
+}
+
+.feature-icon {
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #cbd9e9;
+}
+
+
+/* =========================
+   O'QITUVCHILAR
+========================= */
+
+.teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.teacher-card {
+    padding: 25px;
+    text-align: center;
+    background: #f7faff;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.teacher-photo {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #dff3ff;
+}
+
+.teacher-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teacher-card p {
+    color: #777;
+}
+
+
+/* =========================
+   YANGILIKLAR
+========================= */
+
+.news-section {
+    background: #f7faff;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.news-card {
+    overflow: hidden;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.news-image {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 25px;
+}
+
+.date {
+    color: #1261d6;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.news-content h3 {
+    margin: 8px 0;
+}
+
+.news-content p {
+    margin-bottom: 15px;
+    color: #777;
+}
+
+.news-content a {
+    color: #1261d6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =========================
+   GALEREYA
+========================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================
+   BOG'LANISH
+========================= */
+
+.contact {
+    padding: 90px 0;
+    background: #092b58;
+    color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.contact-small {
+    color: #71d7ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.contact h2 {
+    margin: 10px 0 15px;
+    font-size: 42px;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info>div {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.contact-info>div>span {
+    font-size: 25px;
+}
+
+.contact-info p,
+.contact>.container>div>p {
+    color: #c5d3e4;
+}
+
+
+/* FORMA */
+
+.contact-form {
+    width: 100%;
+    padding: 35px;
+    background: white;
+    color: #172033;
+    border-radius: 18px;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #1261d6;
+}
+
+
+/* GOOGLE MAPS TUGMASI */
+
+.map-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 22px;
+    background: #1877f2;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.map-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #061d3b;
+    color: white;
+}
+
+.footer-content {
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-content h3 {
+    color: #71d7ff;
+}
+
+.footer-content p {
+    max-width: 500px;
+    color: #9eb2c8;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #71d7ff;
+}
+
+.copyright {
+    padding: 18px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #8298b1;
+    font-size: 13px;
+}
+
+
+/* =========================
+   TABLET VA TELEFON
+========================= */
+
+@media (max-width: 900px) {
+    .header {
+        height: 70px;
+    }
+    body {
+        padding-top: 70px;
+    }
+    .nav {
+        height: 70px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 15px 0;
+        background: white;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+    nav.active {
+        display: flex;
+    }
+    nav a {
+        width: 100%;
+        padding: 13px 20px;
+    }
+    nav a:hover {
+        background: #f2f7ff;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .stat:nth-child(2) {
+        border-right: none;
+    }
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .feature-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    .teacher-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-grid {
+        gap: 45px;
+    }
+}
+
+
+/* =========================
+   TELEFON
+========================= */
+
+@media (max-width: 600px) {
+    .container {
+        width: 92%;
+    }
+    .logo-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+    .logo h2 {
+        font-size: 16px;
+    }
+    .logo span {
+        font-size: 11px;
+    }
+    /* HERO */
+    .hero {
+        min-height: 520px;
+        padding: 60px 0;
+    }
+    .hero-content {
+        width: 92%;
+    }
+    .hero-small {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+    .hero h1 {
+        font-size: 34px;
+        line-height: 1.1;
+    }
+    .hero p {
+        font-size: 15px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 260px;
+    }
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+    /* STATISTIKA */
+    .stat {
+        padding: 20px 5px;
+    }
+    .stat strong {
+        font-size: 24px;
+    }
+    .stat span {
+        font-size: 12px;
+    }
+    /* SECTION */
+    .section {
+        padding: 60px 0;
+    }
+    .section-title {
+        margin-bottom: 35px;
+    }
+    .section-title h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    /* ABOUT */
+    .about-grid {
+        gap: 30px;
+    }
+    .about-image img {
+        height: 260px;
+    }
+    .school-placeholder {
+        min-height: 250px;
+    }
+    /* FEATURES */
+    .features {
+        padding: 60px 0;
+    }
+    .feature-card {
+        padding: 25px;
+    }
+    /* O'QITUVCHILAR */
+    .teacher-grid {
+        grid-template-columns: 1fr;
+    }
+    /* YANGILIKLAR */
+    .news-image {
+        height: 210px;
+    }
+    /* GALEREYA */
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .gallery-item {
+        height: 220px;
+    }
+    /* CONTACT */
+    .contact {
+        padding: 60px 0;
+    }
+    .contact h2 {
+        font-size: 32px;
+    }
+    .contact-form {
+        padding: 22px;
+    }
+    /* FOOTER */
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .social {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* =========================
+   JUDA KICHIK TELEFON
+========================= */
+
+@media (max-width: 380px) {
+    .hero h1 {
+        font-size: 29px;
+    }
+    .section-title h2 {
+        font-size: 24px;
+    }
+    .stats {
+        grid-template-columns: 1fr;
+    }
+    .stat {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .stat:last-child {
+        border-bottom: none;
+    }
+    .gallery-item {
+        height: 190px;
+    }
+}
