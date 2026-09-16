@@ -64,6 +64,14 @@ img {
     display: flex;
     align-items: center;
     gap: 12px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo:focus-visible {
+    outline: 3px solid #71d7ff;
+    outline-offset: 5px;
+    border-radius: 12px;
 }
 
 .logo-icon {
